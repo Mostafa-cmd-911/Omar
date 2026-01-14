@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: #2c2c2c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#userDataForm {
+    background: #3c3c3c;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Inputs */
+#userDataForm input[type="text"],
+#userDataForm input[type="email"],
+#userDataForm input[type="number"] {
+    padding: 0.75rem 1rem;
+    background-color: #444;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid #555;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#userDataForm input::placeholder {
+    color: #9ca3af;
+}
+
+/* Focus */
+#userDataForm input:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+/* Submit Button */
+#userDataForm input[type="submit"] {
+    margin-top: 0.5rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: none;
+    background: #6366f1;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+#userDataForm input[type="submit"]:hover {
+    background: #4f46e5;
+}
+
+#userDataForm input[type="submit"]:active {
+    transform: scale(0.98);
+}
